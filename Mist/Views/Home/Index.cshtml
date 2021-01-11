@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Спортсмены</title>
+</head>
+<body>
+    <div>
+        <h3>Список</h3>
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            @foreach (var s in ViewBag.Sportsmans)
+            {
+                <tr>
+                    <td><p>@s.NameID</p></td>
+                    <td><p><a href="/Home/Res/@s.ID"> Результаты</a></p></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
